@@ -7,7 +7,7 @@ on:                                  # TRIGGER: when to run this
 
 jobs:                                # Define jobs
   greet:                             # Job ID (can be anything)
-    name: Say Hello                  # Display name in UI
+    name: pragya meri nani hai                  # Display name in UI
     runs-on: ubuntu-latest           # Runner: GitHub-hosted Ubuntu VM
 
     steps:                           # List of steps inside this job
