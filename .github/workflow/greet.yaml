@@ -1,1 +1,22 @@
+name: Hello World Workflow          # Display name in GitHub UI
 
+on:                                  # TRIGGER: when to run this
+  push:                              # Run on every push
+    branches:
+      - main                         # Only when pushing to 'main'
+
+jobs:                                # Define jobs
+  greet:                             # Job ID (can be anything)
+    name: Say Hello                  # Display name in UI
+    runs-on: ubuntu-latest           # Runner: GitHub-hosted Ubuntu VM
+
+    steps:                           # List of steps inside this job
+      - name: Print Hello            # Step display name
+        run: echo "Hello, GitHub Actions! 🚀"   # Shell command
+
+      - name: Show date and time
+        run: date
+
+      - name: Show current directory
+        run: pwd && ls -la
+```
